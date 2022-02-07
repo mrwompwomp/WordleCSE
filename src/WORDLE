@@ -91,15 +91,13 @@ Repeat K=105 and L=5
 	End
 End
 length(Str9->W
-DelVar V
 sub(Str3,2,length(Str3)-1->Str4
 If max(seq(inString(Ans,sub("JZXQV",A,1)),A,1,5
 Then
 	3
 	If W!=1375
 	det(0
-	If inString(Str9,Str4
-	1->V
+	inString(Str9,Str4
 Else
 	DelVar B
 	For(A,4,0,~1
@@ -114,26 +112,19 @@ Else
 	1
 	If W!=2532
 	det(0
-	If inString(Str9,Str1
+	inString(Str9,Str1
+	If not(Ans
 	Then
-		1->V
-	Else
 		2:det(0
-		If inString(Str9,Str1
-		1->V
+		inString(Str9,Str1
 	End
 End
-If V
+If Ans
 Then
 	For(A,1,5
 		sub(Str4,A,1->Str3
-		If Ans=sub(Str8,A,1
-		Then
-			real(7,9,35+13A,33+13H,11,11,7
-		Else
-			If inString(Str8,Ans
-			real(7,9,35+13A,33+13H,11,11,227
-		End
+		If inString(Str8,Ans
+		real(7,9,35+13A,33+13H,11,11,227-220(Ans=sub(Str8,A,1
 		Str3
 		real(6,0,36+13A,35+13H,0
 	End
@@ -155,7 +146,7 @@ real(0,3,4,0
 If H=5 and not(Z
 "   Lose!//The word was:/"+Str8
 Ans+"//Press any key
-real(6,0,28,42,15+209(H=5),47
+real(6,0,28,42,15+209(H=5 and not(Z)),47
 Repeat getKey
 End
 Goto U
