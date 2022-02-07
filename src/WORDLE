@@ -1,0 +1,166 @@
+:DCS
+"BBBBBBCDDCBBBBBBBBBBD555555DBBBBBBB5555555555BBBBB555555555555BBBD5DC55DD55CD5DBB55EBE5BB5EBE55BC555BDEBBEDB555CD555CCDCCDCC555DD555DBDDDDBD555DC555EBBEEBBE555CB5555BB55BB5555BBD555DC55CD555DBBB555555555555BBBBB5555555555BBBBBBBD555555DBBBBBBBBBBCDDCBBBBBB
+If 80>det([[20
+Then
+	Disp "Get Doors CSE to run this
+	Return
+End
+"rowSwap(WORDVAR->Str0
+det(8
+If Str9="..P:NT:FN
+Then
+	Disp "Transfer WORDVAR"
+	Pause "to your calculator.
+	Return
+End
+real(0,1,1
+real(8,1,0
+real(0,3,4,0
+"WORDLE CSE/Loading..\.
+real(6,0,38,51,23,47
+
+4:det(0
+Str9->Str2
+Lbl U
+DelVar HDelVar Z
+rand
+1+(Ans>=.36)+(Ans>=.88
+det(0
+If Ans=3
+Then
+	sub(Str9,1+5randInt(0,274),5->Str8
+Else
+	sub(Str9,1+3randInt(0,length(Str9)/3),3->Str1
+	DelVar B" ->Str3
+	For(A,2,0,~1
+		B+160^A(inString(Str2,sub(Str1,abs(A-3),1))-1->B
+	End
+	For(A,4,0,~1
+		int(B/21^A->C
+		Str3+sub("ABCDEFGHIKLMNOPRSTUWY",C+1,1->Str3
+		B-21^AC->B
+	End
+	sub(Str3,2,5->Str8
+End
+real(8,1,0
+real(0,3,4,0
+"Wordle CSE
+real(6,0,38,3,255
+real(7,9,0,15,160,16,255
+real(7,9,148,108,10,10,224
+"X
+real(6,0,149,110,255
+For(B,1,5
+	For(A,1,5
+		real(7,9,35+13A,13B+20,11,11,18
+	End
+End
+Lbl S
+DelVar L"0->Str3
+Repeat K=105 and L=5
+	Repeat max(K={105,45,15,23
+		getKey->K
+		real(7,9,8L,18,2,9,255
+		If K>40 and K<94 and K!=44 and K!=45 and L!=5
+		Then
+			L+1->L
+			Str3+sub("ABC  DEFGHIJKLMNOPQRSTUVWXYZ",K-5iPart(.1K+4),1->Str3
+		End
+		Str3
+		real(6,0,~8,19,0,0
+		real(7,9,8L,18,2,9,107
+	End
+	If K=105 and L!=5
+	Then
+		For(A,1,4
+			real(0,3,2,0
+			rand(3
+		End
+	End
+	If K=45:Then
+		DelVar L"0->Str3
+		real(7,9,0,16,160,14,255
+	End
+	If K=15
+	Goto Q
+	If K=23 and L
+	Then
+		real(7,9,8L-8,18,15,9,255
+		sub(Str3,1,L->Str3
+		L-1->L
+	End
+End
+length(Str9->W
+DelVar V
+sub(Str3,2,length(Str3)-1->Str4
+If max(seq(inString(Ans,sub("JZXQV",A,1)),A,1,5
+Then
+	3
+	If W!=1375
+	det(0
+	If inString(Str9,Str4
+	1->V
+Else
+	DelVar B
+	For(A,4,0,~1
+		B+21^A(inString("ABCDEFGHIKLMNOPRSTUWY",sub(Str4,abs(A-5),1))-1->B
+	End
+	For(A,2,0,~1
+		int(B/160^A->C
+		Str4+sub(Str2,C+1,1->Str4
+		B-160^AC->B
+	End
+	sub(Str4,6,3->Str1
+	1
+	If W!=2532
+	det(0
+	If inString(Str9,Str1
+	Then
+		1->V
+	Else
+		2:det(0
+		If inString(Str9,Str1
+		1->V
+	End
+End
+If V
+Then
+	For(A,1,5
+		sub(Str4,A,1->Str3
+		If Ans=sub(Str8,A,1
+		Then
+			real(7,9,35+13A,33+13H,11,11,7
+		Else
+			If inString(Str8,Ans
+			real(7,9,35+13A,33+13H,11,11,227
+		End
+		Str3
+		real(6,0,36+13A,35+13H,0
+	End
+	If Str8=sub(Str4,1,5
+	1->Z
+	H+1->H
+Else
+	For(A,1,4
+		real(0,3,2,0
+		rand(3
+	End
+End
+real(7,9,0,16,160,14,255
+
+If H!=5 and not(Z
+Goto S
+real(0,3,4,0
+"    Win!
+If H=5 and not(Z
+"   Lose!//The word was:/"+Str8
+Ans+"//Press any key
+real(6,0,28,42,15+209(H=5),47
+Repeat getKey
+End
+Goto U
+Lbl Q
+real(0,3,4,255,1
+real(0,3,4,255
+DelVar Str9DelVar Str4DelVar Str0DelVar Str3
+Stop
