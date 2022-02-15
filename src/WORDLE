@@ -6,21 +6,19 @@ Then
 	Return
 End
 "rowSwap(WORDVAR->Str0
-det(8
+4:det(0
 If Str9="..P:NT:FN
 Then
-	Disp "Transfer WORDVAR"
+	Disp "Transfer WORDVAR
 	Pause "to your calculator.
 	Return
 End
+Str9->Str2
 real(0,1,1
 real(8,1,0
 real(0,3,4,0
 "WORDLE CSE/Loading..\.
 real(6,0,38,51,23,47
-
-4:det(0
-Str9->Str2
 Lbl U
 DelVar HDelVar Z
 rand
@@ -42,7 +40,6 @@ Else
 	End
 	sub(Str3,2,5->Str8
 End
-real(8,1,0
 real(0,3,4,0
 "Wordle CSE
 real(6,0,38,3,255
@@ -55,92 +52,90 @@ For(B,1,5
 		real(7,9,35+13A,13B+20,11,11,18
 	End
 End
-Lbl S
-DelVar L"0->Str3
-Repeat K=105 and L=5
-	Repeat max(K={105,45,15,23
-		getKey->K
-		real(7,9,8L,18,2,9,255
-		If K>40 and K<94 and K!=44 and K!=45 and L!=5
-		Then
-			L+1->L
-			Str3+sub("ABC  DEFGHIJKLMNOPQRSTUVWXYZ",K-5iPart(.1K+4),1->Str3
+Repeat H=5 or Z
+	DelVar L"0->Str3
+	Repeat K=105 and L=5
+		Repeat max(K={105,45,15,23
+			getKey->K
+			real(7,9,8L,18,2,9,255
+			If K>40 and K<94 and K!=44 and K!=45 and L!=5
+			Then
+				L+1->L
+				Str3+sub("ABC  DEFGHIJKLMNOPQRSTUVWXYZ",K-5iPart(.1K+4),1->Str3
+			End
+			Str3
+			real(6,0,~8,19,0,0
+			real(7,9,8L,18,2,9,107
 		End
-		Str3
-		real(6,0,~8,19,0,0
-		real(7,9,8L,18,2,9,107
+		If K=105 and L!=5
+		Then
+			For(A,1,4
+				real(0,3,2,0
+				rand(3
+			End
+		End
+		If K=45:Then
+			DelVar L"0->Str3
+			real(7,9,0,16,160,14,255
+		End
+		If K=15
+		Goto Q
+		If K=23 and L
+		Then
+			real(7,9,8L-8,18,15,9,255
+			sub(Str3,1,L->Str3
+			L-1->L
+		End
 	End
-	If K=105 and L!=5
+	length(Str9->W
+	sub(Str3,2,length(Str3)-1->Str4
+	If max(seq(inString(Ans,sub("JZXQV",A,1)),A,1,5
 	Then
+		3
+		If W!=1375
+		det(0
+		inString(Str9,Str4
+	Else
+		0
+		For(A,4,0,~1
+			Ans+21^A(inString("ABCDEFGHIKLMNOPRSTUWY",sub(Str4,abs(A-5),1))-1->B
+		End
+		int(Ans/25600->C
+		sub(Str2,Ans+1,1->Str1
+		B-25600C->B
+		int(Ans/160
+		Str1+sub(Str2,1+Ans,1)+sub(Str2,1+B-160Ans,1->Str1
+		1
+		If W=1375
+		det(0
+		inString(Str9,Str1
+		If not(Ans
+		Then
+			2-(W=3588
+			det(0
+			inString(Str9,Str1
+		End
+	End
+	If Ans
+	Then
+		For(A,1,5
+			sub(Str4,A,1->Str3
+			If inString(Str8,Ans
+			real(7,9,35+13A,33+13H,11,11,227-220(Ans=sub(Str8,A,1
+			Str3
+			real(6,0,36+13A,35+13H,0
+		End
+		If Str8=sub(Str4,1,5
+		1->Z
+		H+1->H
+	Else
 		For(A,1,4
 			real(0,3,2,0
 			rand(3
 		End
 	End
-	If K=45:Then
-		DelVar L"0->Str3
-		real(7,9,0,16,160,14,255
-	End
-	If K=15
-	Goto Q
-	If K=23 and L
-	Then
-		real(7,9,8L-8,18,15,9,255
-		sub(Str3,1,L->Str3
-		L-1->L
-	End
+	real(7,9,0,16,160,14,255
 End
-length(Str9->W
-sub(Str3,2,length(Str3)-1->Str4
-If max(seq(inString(Ans,sub("JZXQV",A,1)),A,1,5
-Then
-	3
-	If W!=1375
-	det(0
-	inString(Str9,Str4
-Else
-	DelVar B
-	For(A,4,0,~1
-		B+21^A(inString("ABCDEFGHIKLMNOPRSTUWY",sub(Str4,abs(A-5),1))-1->B
-	End
-	For(A,2,0,~1
-		int(B/160^A->C
-		Str4+sub(Str2,C+1,1->Str4
-		B-160^AC->B
-	End
-	sub(Str4,6,3->Str1
-	1
-	If W!=2532
-	det(0
-	inString(Str9,Str1
-	If not(Ans
-	Then
-		2:det(0
-		inString(Str9,Str1
-	End
-End
-If Ans
-Then
-	For(A,1,5
-		sub(Str4,A,1->Str3
-		If inString(Str8,Ans
-		real(7,9,35+13A,33+13H,11,11,227-220(Ans=sub(Str8,A,1
-		Str3
-		real(6,0,36+13A,35+13H,0
-	End
-	If Str8=sub(Str4,1,5
-	1->Z
-	H+1->H
-Else
-	For(A,1,4
-		real(0,3,2,0
-		rand(3
-	End
-End
-real(7,9,0,16,160,14,255
-
-If H!=5 and not(Z
-Goto S
 real(0,3,4,0
 "    Win!
 If H=5 and not(Z
