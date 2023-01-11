@@ -1,6 +1,9 @@
 # WordleCSE
 by mr womp womp, 2022-02-07
 
+![](https://raw.githubusercontent.com/mrwompwomp/WordleCSE/main/cap/beach.png)
+![](https://raw.githubusercontent.com/mrwompwomp/WordleCSE/main/cap/win.png)
+
 REQUIREMENTS  
 <ul>
 <li>TI-84 Plus C Silver Edition</li>
